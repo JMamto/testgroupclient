@@ -63,7 +63,8 @@ const EditTodo = ({todo}) => {
       <div className="modal-body mdl-body">
 
         <input type="text" className="form-control mb-2" value ={todo_name} onChange={e => setTodo_name(e.target.value)}/>
-        <input type="text" className="form-control mb-2" value={description} onChange={e => setDescription(e.target.value)}/>
+        {/* <input type="text" className="form-control mb-2" value={description} onChange={e => setDescription(e.target.value)}/> */}
+        <textarea className="form-control mb-2" value={description} onChange={e => setDescription(e.target.value)}></textarea>
         <input type="date" className="form-control mb-2" value={date} onChange={e => setDate(e.target.value)}/>
         
         <div className="form-control mb-2"
